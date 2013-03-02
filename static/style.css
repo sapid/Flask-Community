@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, button {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align: baseline; background:none;}
+ol, ul {list-style:none;}
+h1, h2, h3, h4, h5, h6, li {line-height:100%;}
+blockquote, q {quotes:none;}
+q:before,
+q:after {content: "";}
+table {border-collapse:collapse; border-spacing:0;}
+input, textarea, select{
+	font:12px Helvetica, Arial, sans-serif;
+	vertical-align:middle;
+	margin:0;
+	padding:0;
+}
+form, fieldset{border-style:none;}
+body {
+	min-width:1024px;
+	color:#000;
+	/*background:#f9fbf4;*/
+   background:#F7F4F1;
+	font:12px "Georgia", Verdana, serif;
+}
+img{border-style:none;}
+a{
+	text-decoration:none;
+	color:#543;
+   border-bottom: 1px solid #543
+}
+a:focus {outline:none;}
+a:hover{
+   text-decoration:none;
+   border-bottom: 1px solid #543;
+}
+h1 {
+   font-family: Baskerville, Georgia, serif;
+}
+/* headstrip starts */
+#headstrip{
+   background-color: #aa483b;
+   min-height: 10px;
+}
+/* headstrip ends */
+/* wrapper start*/
+#wrapper{
+	width:100%;
+	overflow:hidden;
+	position:relative;
+   font-color: #543
+}
+/* header start */
+.header-holder{
+	width:946px;
+	margin:0 auto;
+}
+.social-link{
+	background-color: #da685b; 
+	width:140px;
+	height:42px;
+	color:#000;
+	text-align:center;
+	font:16px/40px "Baskerville", "Georgia", serif;
+   position: absolute;
+   right: 150px;
+   top: 0px;
+}
+.social-link span { 
+   border-top: 1px solid #543; 
+   border-bottom: 1px solid #543;
+}
+a.social-link { border: 1px solid #543; border-top: none; }
+.social-link:hover{text-decoration:none;}
+.container{
+	overflow:hidden;
+	width:100%;
+}
+/* logo start */
+.logo{
+   font-size: 30px;
+	margin:28px 0 51px;
+	/* text-indent:-9999px; */
+	/* background:url(/static/logo.gif) no-repeat; */
+	width:192px;
+	height:31px;
+	overflow:hidden;
+}
+.logo a{
+   font-color: #543;
+	display:block;
+	height:100%;
+}
+/* logo end */
+/* nav start */
+#nav{
+	height:25px;
+	margin:-1px 0;
+	overflow:hidden;
+	padding-bottom:28px;
+}
+#nav li{
+	float:left;
+	padding:0 25px 0 3px;
+	font:20px "Baskerville", "Georgia", serif;
+}
+#nav li a{color:#543;}
+#nav .active a{
+	text-decoration:none;
+   font-color: #000;
+}
+#nav li.active a { border-bottom: 3px groove #543; }
+#nav li a:hover{
+	text-decoration:none;
+}
+/* nav end */
+/* header end */
+.main-box{
+	background: url(/static/scribble_light.png);
+	border-color:#d0e4d9;
+   border-top: 1px solid #876;
+   border-bottom: 1px solid #543;
+	margin-bottom:62px;
+}
+.main-box .holder{
+	width:921px;
+	padding:0 0 0 20px;
+	margin:0 auto;
+}
+.main-box .holder:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.main-box .info{
+	font-size:26px;
+	line-height:28px;
+	overflow:hidden;
+	padding-top:15px;
+   padding-bottom: 10px;
+	width:452px;
+}
+.main-box .info.sp{
+	font-size:26px;
+	height:1%;
+	line-height:32px;
+	overflow:hidden;
+	padding-top:56px;
+	width:452px;
+}
+.main-box .info.ps{
+	font-size:26px;
+	height:1%;
+	line-height:32px;
+	overflow:hidden;
+	padding-top:56px;
+	width:470px;
+}
+.sub-text{
+	font-family:"Museo 300",Verdana,serif;
+	word-spacing:0px;
+}
+.main-box .info h2{
+	font:41px/48px "Baskerville",Verdana,serif;
+	letter-spacing:0;
+	margin:0 0 12px;
+	word-spacing:-4px;
+}
+.main-box .info p{
+	font-family: "Georgia", Verdana, serif;
+	font-size:20px;
+	letter-spacing:0;
+	margin-bottom:12px;
+	}
+.main-box .info.sp h2{
+	font:41px/48px "Baskerville",Verdana,serif;
+	letter-spacing:0;
+	margin:0 0 12px;
+	word-spacing:-2px;
+}
+.main-box .info.sp p{
+	font-family: "Museo 300", Verdana, serif;
+	font-size:25px;
+	letter-spacing:0;
+	margin-bottom:12px;
+	}
+	.main-box .info.ps h2{
+		font:41px/48px "Baskerville","Georgia",serif;
+		letter-spacing:0;
+		margin:0 0 12px;
+		word-spacing:-2px;
+	}
+	.main-box .info.ps p{
+		font-family: "Museo 300", Verdana, serif;
+		font-size:20px;
+		letter-spacing:0;
+		margin-bottom:12px;
+		}
+.img-holder{
+	position:relative;
+	margin:-35px -7px -35px 34px;
+	float:right;
+}
+.img-holder img{vertical-align:top;}
+.title-text{
+	font-size:19px;
+	line-height:27px;
+	padding:3px 15px 0 4px;
+}
+.idea-list{
+	width:662px;
+	margin-right:-60px;
+	padding:38px 0 4px;
+	overflow:hidden;
+}
+.idea-list li{
+	line-height:17px;
+	padding:0 34px 36px 5px;
+	width:290px;
+	float:left;
+}
+.idea-list li strong{
+	font-size:14px;
+	line-height:23px;
+}
+/* wrapper end*/

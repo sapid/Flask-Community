@@ -1,0 +1,46 @@
+<!DOCTYPE html5>
+<head>
+	<title>Flask-Community</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" />
+	<link media="all" type="text/css" rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+   {% block css %}{% endblock %}
+</head>
+<body>
+	<div id="wrapper">
+      <div id="headstrip"></div>
+		<div id="header">
+			<div class="header-holder">
+				<div class="container">
+					<a href="https://facebook.com/" class="social-link"><span>Facebook</span></a>
+				</div><!--container-->
+				<h1 class="logo"><a href="#">Flask: Community</a></h1><!--logo-->
+				<ul id="nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('mods' }}">Mods</a></li>
+					<li><a href="{{ url_for('events') }}">Events</a></li>
+                    <li><a href="{{ url_for('email') }}">Mailing List</a></li>
+					<li><a href="{{ url_for('contact') }}">Contact</a></li>
+					<li><a href="{{ url_for('links') }}">Links</a></li>
+				</ul><!--nav-->
+			</div><!--header-holder-->
+		</div><!--header-->
+		<div class="main-box">
+			<div class="holder">
+				<div class="img-holder">
+					<!--<img src="http://bloomfirst.com/images/ico-box.png" alt="" width="419" height="419" />-->
+				</div><!--img-holder-->
+				<div class="info">
+                   {% block content %}{% if content %} {{ content }} {% else %}
+                       <h2>Community</h2>
+                       <p>This project is designed to provide a web page for communities to advertise their events. Groups of event organizers can announce when their next event will be, and users can sign up to be reminded of these events by email.</p>
+                   {% endif %}{% endblock %}
+					<!--<strong class="sub-text">Bold undertext.</strong>-->
+				</div><!--info-->
+			</div><!--holder-->
+		</div><!--promo-box-->
+
+	</div><!--wrapper-->
+</body>
+</html>
