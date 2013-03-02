@@ -1,10 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from main import app.config
+from main.app import config
 __author__ = 'Will Crawford <will@metawhimsy.com>'
 
-engine = create_engine(app.config.DATABASE_URI, convert_unicode=True)
+engine = create_engine(config['DATABASE_URI'], convert_unicode=True)
 db_session = scoped_session(sessionmaker(autocommit=False,
                                          autoflush=False,
                                          bind=engine))
