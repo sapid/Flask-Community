@@ -13,7 +13,6 @@ def init_engine(uri, **kwargs):
    global engine 
    engine = create_engine(uri, convert_unicode=True)
    return engine
-   
 
 def init_db():
    # import all modules here that might define models so that
