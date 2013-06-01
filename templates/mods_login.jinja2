@@ -1,0 +1,14 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+   {% from "_formshelper.jinja2" import render_field %}
+   <form method=post action="{{ url_for('mods_login') }}">
+      {{ form.csrf_token }}
+      <dl>
+         {{ render_field(form.username) }}
+         {{ render_field(form.password) }}
+         {{ render_field(form.remember_me) }}
+      </dl>
+      <p><input type=submit value="Log in">
+   </form>
+{% endblock %}
